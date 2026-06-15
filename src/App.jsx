@@ -1,4 +1,3 @@
-
 import { useState, useEffect } from "react";
 import { initializeApp } from "firebase/app";
 import { getAnalytics } from "firebase/analytics";
@@ -163,9 +162,11 @@ export default function FeedbackApp() {
       {/* Nav */}
       <div className="bg-white border-b border-gray-100 sticky top-0 z-10">
         <div className="max-w-6xl mx-auto px-6 py-3 flex items-center justify-between">
-          <span className="text-lg font-semibold tracking-wide text-gray-800">
-            1618 <span className="text-red-600">Asian Fusion</span>
-          </span>
+          <img
+            src="/1618_logo_transparent.png"
+            alt="1618 Asian Fusion"
+            className="h-12 w-auto object-contain"
+          />
           <div className="flex gap-2">
             <button
               onClick={() => setCurrentPage("survey")}
@@ -200,6 +201,11 @@ export default function FeedbackApp() {
           <div className="max-w-md mx-auto">
             <div className="bg-white rounded-2xl shadow-sm border border-gray-100 p-8">
               <div className="text-center mb-8">
+                <img
+                  src="/1618_logo_transparent.png"
+                  alt="1618 Asian Fusion"
+                  className="h-20 w-auto object-contain mx-auto mb-4"
+                />
                 <h1 className="text-2xl font-semibold text-gray-800">How was your visit?</h1>
                 <p className="text-gray-400 text-sm mt-1">Your feedback helps us improve</p>
               </div>
